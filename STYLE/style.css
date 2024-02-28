@@ -1,4 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+html {
+    font-size: 16px; /* Definindo o tamanho base */
+}
+
+body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background: url("/TO-DO-List_Jessica_ADA/IMG/time-organization-concept-close-up.jpg");
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+}
+
+.container {
+    background-color: #d1d1d1;
+    width: 31.25rem; /* 500px convertido para rem */
+    border-radius: 0.625rem; /* 10px convertido para rem */
+    padding: 1.25rem; /* 20px convertido para rem */
+    margin: 6.25rem auto 0; /* 100px convertido para rem */
+}
+
+.input-task {
+    border: none;
+    border-radius: 0.3125rem; /* 5px convertido para rem */
+    width: 18.75rem; /* 300px convertido para rem */
+    height: 2.5rem; /* 40px convertido para rem */
+    padding-left: 0.625rem; /* 10px convertido para rem */
+    margin-bottom: 1rem; /* 16px convertido para rem */
+}
+
+.button-add-task {
+    border: none;
+    border-radius: 0.3125rem; /* 5px convertido para rem */
+    height: 2.5rem; /* 40px convertido para rem */
+    background-color: #003329;
+    color: #ffffff;
+    font-size: 1.0625rem; /* 17px convertido para rem */
+    padding: 0 0.9375rem; /* 15px convertido para rem */
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button-add-task:hover {
+    opacity: 0.8;
+}
+
+.button-add-task:active {
+    opacity: 0.6;
+}
+
+.list-tasks {
+    width: 100%;
+    list-style: none;
+    margin-top: 1.875rem; /* 30px convertido para rem */
+}
+
+.task {
+    background-color: #F2F2F2;
+    box-shadow: 0.0625rem 0.25rem 0.625rem rgba(0, 0, 0, 0.2); /* 1px 4px 10px rgba(0, 0, 0, 0.2) convertido para rem */
+    height: 3.125rem; /* 50px convertido para rem */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.9375rem; /* 15px convertido para rem */
+    border-radius: 0.3125rem; /* 5px convertido para rem */
+    margin-bottom: 1.25rem; /* 20px convertido para rem */
+    cursor: pointer;
+}
 
 img {
-    height: 25px;
+    height: 1.5625rem; /* 25px convertido para rem */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+    opacity: 1;
+}
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Alterando a largura para se ajustar melhor em dispositivos móveis */
+        margin: 3rem auto 0; /* Alterando a margem para se ajustar melhor em dispositivos móveis */
+    }
+
+    .input-task {
+        width: 100%; /* Definindo a largura como 100% para preencher a largura do contêiner */
+    }
+
+    .button-add-task {
+        width: 100%; /* Definindo a largura como 100% para preencher a largura do contêiner */
+        margin-top: 1rem; /* Adicionando um espaçamento superior */
+    }
+
+    .list-tasks {
+        margin-top: 1.5rem; /* Ajustando o espaçamento superior */
+    }
+
+    .task {
+        height: 3.5rem; /* Ajustando a altura para melhor legibilidade */
+    }
+
+    img {
+        height: 1.875rem; /* Ajustando a altura da imagem para melhor legibilidade */
+    }
 }
