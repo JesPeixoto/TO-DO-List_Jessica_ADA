@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             tarefaItem.setAttribute('data-id', item.id);
 
             const checkImg = document.createElement('img');
-            checkImg.src = "/TO-DO-List_Jessica_ADA/IMG/check-up-medico.png"; // Corrigindo o caminho da imagem
+            checkImg.src = "/TO-DO-List_Jessica_ADA/IMG/check-up-medico.png"; 
             checkImg.alt = "check-na-tarefa";
             checkImg.addEventListener('click', () => concluirTarefa(item.id));
 
